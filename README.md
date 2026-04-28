@@ -22,6 +22,10 @@ O projeto foi totalmente refatorado para seguir o padrão MVC em ambas as pontas
 
 ## 🚀 Como Executar (Docker)
 
+> [!IMPORTANT]
+> Antes de começar, certifique-se de que o **tutorial de instalação do Docker** foi concluído com sucesso.
+> Você pode acessar o guia de instalação aqui: [Tutorial de Instalação Docker](https://drive.google.com/file/d/1Mc_HCTId83ddrbjUc3VXW0WqBjn3bYFa/view?usp=sharing)
+
 Esta é a maneira recomendada, pois garante que todas as dependências do PyQt6 e do banco de dados estejam configuradas.
 
 ### 1. Permitir acesso ao Servidor X (Apenas Linux)
