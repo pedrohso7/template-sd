@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   server:
+    init: true
     build: ./server
     ports:
       - "5000:5000"
@@ -21,6 +22,7 @@ services:
     command: ["sh", "-c", "touch /app/data/sistema.db && chmod 666 /app/data/sistema.db"]
 
   client:
+    init: true
     build: ./client
     environment:
       - DISPLAY=${DISPLAY}
