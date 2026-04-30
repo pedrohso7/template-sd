@@ -54,6 +54,22 @@ docker-compose up --scale client=3
 
 _(Substitua `3` pelo número desejado de instâncias)_
 
+### 4. Parando os containers
+
+Para encerrar o projeto, você pode usar `Ctrl + C` no terminal onde o Docker está rodando. Se preferir, use:
+
+```bash
+docker-compose down
+```
+
+Caso os containers não fechem corretamente (comum em alguns ambientes com PyQt6), você pode forçar a parada utilizando:
+
+```bash
+sudo docker container stop template-sd-server-1 template-sd-db-init-1 template-sd-client-2 template-sd-client-N
+```
+
+*(Nota: Substitua `template-sd-client-N` pelos nomes/IDs reais dos containers caso tenha escalado para mais instâncias)*
+
 ---
 
 ## 🗄️ Visualizando o Banco de Dados (DBeaver)
