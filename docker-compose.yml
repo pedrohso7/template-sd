@@ -6,7 +6,7 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - db-data:/app/data
+      - ./data:/app/data
     environment:
       - DB_PATH=/app/data/usuarios.db
     depends_on:
@@ -15,7 +15,7 @@ services:
   db-init:
     image: busybox
     volumes:
-      - db-data:/app/data
+      - ./data:/app/data
     command: ["sh", "-c", "touch /app/data/usuarios.db && chmod 666 /app/data/usuarios.db"]
 
   client:
@@ -31,5 +31,4 @@ services:
     depends_on:
       - server
 
-volumes:
-  db-data:
+
