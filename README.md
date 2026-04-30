@@ -56,6 +56,16 @@ _(Substitua `3` pelo número desejado de instâncias)_
 
 ---
 
+## 🗄️ Visualizando o Banco de Dados (DBeaver)
+
+Para visualizar e gerenciar os dados salvos no projeto (como a tabela de usuários), recomendamos o uso do **DBeaver**.
+
+> [!TIP]
+> Preparamos um guia passo a passo de como configurar e conectar o DBeaver ao banco de dados `sistema.db` deste projeto:
+> [Guia de Uso do DBeaver](https://drive.google.com/file/d/1Z7i3VpFkK7frqA6rWSgvmAlDWp4Fm9uV/view?usp=sharing)
+
+---
+
 ## 📡 Protocolo de Comunicação
 
 A comunicação utiliza **Sockets TCP** com um protocolo de mensagem estruturado:
