@@ -8,7 +8,7 @@ services:
     volumes:
       - ./data:/app/data
     environment:
-      - DB_PATH=/app/data/usuarios.db
+      - DB_PATH=/app/data/sistema.db
     depends_on:
       - db-init
 
@@ -16,7 +16,7 @@ services:
     image: busybox
     volumes:
       - ./data:/app/data
-    command: ["sh", "-c", "touch /app/data/usuarios.db && chmod 666 /app/data/usuarios.db"]
+    command: ["sh", "-c", "touch /app/data/sistema.db && chmod 666 /app/data/sistema.db"]
 
   client:
     build: ./client

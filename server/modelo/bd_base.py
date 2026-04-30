@@ -1,7 +1,7 @@
 import sqlite3
 import os
 
-DB_PATH = os.environ.get('DB_PATH', os.path.join(os.path.dirname(__file__), 'usuarios.db'))
+DB_PATH = os.environ.get('DB_PATH', os.path.join(os.path.dirname(__file__), 'sistema.db'))
 SCHEMA_PATH = os.path.join(os.path.dirname(__file__), 'scripts', 'esquema.sql')
 
 def obter_conexao():
