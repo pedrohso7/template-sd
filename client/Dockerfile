@@ -23,6 +23,8 @@ RUN apt-get update && apt-get install -y \
     libfontconfig1 \
     libxrender1 \
     libxi6 \
+    libnss3 \
+    libasound2 \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
