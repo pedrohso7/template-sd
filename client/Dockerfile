@@ -11,6 +11,10 @@ RUN apt-get update && apt-get install -y \
     libxcb-xkb1 \
     libx11-xcb1 \
     libxkbcommon-x11-0 \
+    libxkbcommon0 \
+    libwayland-client0 \
+    libwayland-cursor0 \
+    libwayland-egl1 \
     libdbus-1-3 \
     libxcb-cursor0 \
     libxcb-icccm4 \
