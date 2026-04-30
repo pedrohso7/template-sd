@@ -78,12 +78,16 @@ A comunicação utiliza **Sockets TCP** com um protocolo de mensagem estruturado
 - O Cliente envia o tamanho (4 bytes) + JSON de Login.
 - O Servidor lê o tamanho, recebe o JSON, processa no Controller e devolve tamanho + JSON de Resposta.
 
+> [!NOTE]
+> Para entender mais sobre a implementação de Sockets em Python, veja a [Documentação Oficial de Sockets](https://docs.python.org/3/library/socket.html).
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Python 3.10**
-- **PyQt6** (Interface Gráfica)
-- **SQLite3** (Banco de Dados)
-- **Docker & Docker Compose** (Containerização)
-- **Socket & Threading** (Comunicação Distribuída)
+- **Python 3.10** ([Documentação](https://docs.python.org/3.10/))
+- **PyQt6** ([Documentação](https://www.riverbankcomputing.com/static/Docs/PyQt6/))
+- **SQLite3** ([Documentação](https://www.sqlite.org/docs.html))
+- **Docker & Docker Compose** ([Guia de Instalação](https://drive.google.com/file/d/1Mc_HCTId83ddrbjUc3VXW0WqBjn3bYFa/view?usp=sharing))
+- **DBeaver** ([Guia de Uso](https://drive.google.com/file/d/1Z7i3VpFkK7frqA6rWSgvmAlDWp4Fm9uV/view?usp=sharing))
+- **Socket & Threading** ([Documentação Sockets](https://docs.python.org/3/library/socket.html))
