@@ -28,13 +28,16 @@ O projeto foi totalmente refatorado para seguir o padrão MVC em ambas as pontas
 
 Esta é a maneira recomendada, pois garante que todas as dependências do PyQt6 e do banco de dados estejam configuradas.
 
-### 1. Permitir acesso ao Servidor X (Apenas Linux)
+### 1. Preparar o ambiente gráfico (Apenas Linux)
 
-Como o cliente possui interface gráfica, você precisa autorizar o Docker a abrir janelas no seu monitor:
+Como o cliente possui interface gráfica, você precisa autorizar o Docker a abrir janelas no seu monitor. Execute o comando abaixo no terminal antes de iniciar o projeto:
 
 ```bash
 xhost +local:docker
 ```
+
+> [!TIP]
+> O projeto já está configurado para detectar sistemas modernos (**Wayland**) automaticamente. Caso a interface não abra, o comando `xhost` acima garantirá a compatibilidade.
 
 ### 2. Iniciar o projeto
 
