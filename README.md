@@ -44,7 +44,7 @@ xhost +local:docker
 Para compilar e iniciar o servidor e um cliente:
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 ### 3. Executar múltiplas instâncias do Cliente
@@ -52,7 +52,7 @@ docker-compose up --build
 Para testar a concorrência do servidor com vários clientes simultâneos:
 
 ```bash
-docker-compose up --scale client=3
+docker compose up --scale client=3
 ```
 
 _(Substitua `3` pelo número desejado de instâncias)_
@@ -62,7 +62,7 @@ _(Substitua `3` pelo número desejado de instâncias)_
 Para encerrar o projeto, você pode usar `Ctrl + C` no terminal onde o Docker está rodando. Se preferir, use:
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 Caso os containers não fechem corretamente (comum em alguns ambientes com PyQt6), você pode forçar a parada utilizando:
